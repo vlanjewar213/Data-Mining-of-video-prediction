@@ -2,18 +2,21 @@
 
 Data-Mining-of-video-prediction
 
-Random Forest
+Random Forest :
+
 A random forest is a collection of random trees with a specified number of trees (the number of trees parameter). Bootstrapped subsets of the ExampleSet provided at the Input Port are used to create/train these trees. A splitting rule for one specific Attribute is represented by each node in a tree. For the splitting rule selection, only a subset of Attributes is examined, as defined by the subset ratio criterion. This rule separates values in the most efficient way possible given the parameter criterion chosen. The rule separates data belonging to various classes for classification, while it separates them for regression to reduce the estimation error. The process of creating new nodes continues until the halting requirements are met.
 The random forest model can be applied to new Examples using the Apply Model Operator after it has been generated. Each random tree makes a forecast for each Example by assessing the leaf and follows the branches of the tree according to the splitting rules. The majority of Examples are used to make class predictions, while estimations are based on the average of values reaching a leaf. The resulting model is a voting model based on all randomly generated trees. Because all single forecasts are given equal weight and are based on subsets of Examples, the resultant prediction varies less than the single predictions.
 The random forest model can be applied to new Examples using the Apply Model Operator after it has been generated. Each random tree makes a forecast for each Example by assessing the leaf and follows the branches of the tree according to the splitting rules. The majority of Examples are used to make class predictions, while estimations are based on the average of values reaching a leaf. The resulting model is a voting model based on all randomly generated trees. Because all single forecasts are given equal weight and are based on subsets of Examples, the resultant prediction varies less than the single predictions.
 
-Decision Tree
+Decision Tree:
+
 A decision tree is a tree-like collection of nodes used to make a judgement about a value's class affiliation or a numerical target value estimate. For each Attribute, each node indicates a splitting rule. This rule separates variables belonging to various classes for classification, and it separates them for regression to reduce error in the most optimal method for the given parameter criterion.
 The process of creating new nodes continues until the halting requirements are met. A numerical value estimation is obtained by averaging the values in a leaf, while a forecast for the class label Attribute is determined based on the majority of Examples that reached this leaf during generation.
 This Operator can handle both nominal and numerical Attributes in ExampleSets. For classification, the label Attribute must be nominal, and for regression, it must be numerical.
 The Apply Model Operator can be used to apply the decision tree model to new Examples after it has been generated. Each Example follows the tree's branches according to the dividing rule until it reaches a leaf.
 
-SVM
+SVM:
+
 Stefan Rueping's Java implementation of the support vector machine, mySVM, is used by this learner. This learning method may be used for both regression and classification, and it has a quick algorithm that produces good results for a variety of learning problems. mySVM can handle loss functions that are linear, quadratic, or even asymmetric.
 Dot, radial, polynomial, neural, anova, epachnenikov, gaussian combination, and multiquadric kernels are all supported by this operator. The parameters section contains an explanation of these kernel types.
 A basic description of the SVM can be found here. The standard SVM takes a set of input data and predicts which of two potential classes the input belongs to for each given input, making it a non-probabilistic binary linear classifier. An SVM training method creates a model that allocates new examples to one of two categories based on a set of training examples that have been labelled as belonging to one of two categories. An SVM model is a representation of the examples as points in space, mapped so that the examples of the different categories are separated by a large distance. New examples are then mapped into the same area and assigned to a category based on which they belong.
