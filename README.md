@@ -1,4 +1,5 @@
-# Data-Mining-of-video-prediction
+ About the project
+Data-Mining-of-video-prediction
 
 Random Forest
 A random forest is a collection of random trees with a specified number of trees (the number of trees parameter). Bootstrapped subsets of the ExampleSet provided at the Input Port are used to create/train these trees. A splitting rule for one specific Attribute is represented by each node in a tree. For the splitting rule selection, only a subset of Attributes is examined, as defined by the subset ratio criterion. This rule separates values in the most efficient way possible given the parameter criterion chosen. The rule separates data belonging to various classes for classification, while it separates them for regression to reduce the estimation error. The process of creating new nodes continues until the halting requirements are met.
